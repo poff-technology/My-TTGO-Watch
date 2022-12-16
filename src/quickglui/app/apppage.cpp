@@ -60,6 +60,11 @@ AppPage& AppPage::moveExitButtonToForeground()
   lv_obj_move_foreground(btnExit.handle());
   return *this;
 }
+AppPage& AppPage::moveSettingsButtonToForeground()
+{
+  lv_obj_move_foreground(btnSettings.handle());
+  return *this;
+}
 
 Container& AppPage::createChildContainer(lv_layout_t autoLayoutOptios) {
   if (!hasChildContainer()) {
